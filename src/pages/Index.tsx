@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -67,12 +66,12 @@ const Index = () => {
         <h1 className="text-3xl font-bold text-gray-900 mb-2">CHECK LIST</h1>
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-        {/* Left Column - Checklist */}
+      <div className="grid grid-cols-3 gap-8">
+        {/* Left Column - Checklist (1/3 width) */}
         <div>
           <Card>
             <CardHeader>
-              <CardTitle className="text-xl font-semibold text-gray-800">
+              <CardTitle className="text-xl font-semibold text-gray-800 text-center">
                 DANH SÁCH KIỂM TRA
               </CardTitle>
             </CardHeader>
@@ -108,11 +107,11 @@ const Index = () => {
           </Card>
         </div>
 
-        {/* Right Column - Machine Controls */}
-        <div>
+        {/* Right Column - Machine Controls (2/3 width) */}
+        <div className="col-span-2">
           <Card>
             <CardHeader>
-              <CardTitle className="text-xl font-semibold text-gray-800">
+              <CardTitle className="text-xl font-semibold text-gray-800 text-center">
                 CÔNG TẮC ĐIỀU KHIỂN
               </CardTitle>
             </CardHeader>
