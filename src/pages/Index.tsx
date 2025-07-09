@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -80,8 +79,8 @@ const Index = () => {
               {checklistItems.map((item) => (
                 <div 
                   key={item.id} 
-                  className={`flex items-center space-x-3 p-3 rounded-lg hover:bg-gray-50 transition-colors border-l-4 ${
-                    checkedItems[item.id] ? 'border-green-500 bg-green-50' : 'border-transparent'
+                  className={`flex items-center space-x-3 p-3 rounded-lg hover:bg-gray-50 transition-colors ${
+                    checkedItems[item.id] ? 'bg-green-50' : ''
                   }`}
                 >
                   <span className="text-sm font-medium text-gray-600 w-6">
